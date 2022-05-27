@@ -3,19 +3,19 @@ abstract class Materiais (
     var noscivo: Boolean,
 
         ) {
-    open var reciclável: String = ("")
-    open var nreciclável: String = ("")
+    open var reciclavel: String = ("")
+    open var nreciclavel: String = ("")
     open
 
     fun exibirLista(reciclaveis: Boolean) {
         if (reciclaveis) {
-            var listr: List<String> = listOf(*reciclável.split(", ").toTypedArray())
+            var listr: List<String> = listOf(*reciclavel.split(", ").toTypedArray())
             listr.forEach(){
                 println(it)
             }
 
         }else{
-            var listnr: List<String> = listOf(*nreciclável.split(", ").toTypedArray())
+            var listnr: List<String> = listOf(*nreciclavel.split(", ").toTypedArray())
             listnr.forEach() {
                 println(it)
             }
