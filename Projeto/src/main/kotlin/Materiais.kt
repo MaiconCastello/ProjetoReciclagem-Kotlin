@@ -3,8 +3,8 @@ abstract class Materiais (
     var noscivo: Boolean,
 
         ) {
-    open var reciclável: String = ("Bla-Bla, arroz, feijão")
-    open var nreciclável: String = ("papel, bluble, abublé")
+    open var reciclável: String = ("")
+    open var nreciclável: String = ("")
     open
 
     fun exibirLista(reciclaveis: Boolean) {

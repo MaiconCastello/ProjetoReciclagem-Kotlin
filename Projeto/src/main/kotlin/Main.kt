@@ -9,7 +9,7 @@ fun main() {
                 "\n4 → Sair")
         var menu = readln().toInt()
         when(menu){
-            1 ->{val teste = Papel(false,true)
+            1 ->{val teste = Metal(false,true)
             teste.exibirLista(teste.reciclaveis)}
             2 ->{}
             3 ->{}
