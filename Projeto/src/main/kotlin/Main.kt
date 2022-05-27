@@ -38,6 +38,18 @@ fun main() {
                         val papel = Papel(reciclavel,true)
                         papel.exibirLista(papel.reciclaveis)
                     }
+                    2-> {
+                        val plastico = Plastico(reciclavel,true)
+                        plastico.exibirLista(plastico.reciclaveis)
+                    }
+                    3->{
+                        val metal = Metal(reciclavel,true)
+                        metal.exibirLista(metal.reciclaveis)
+                    }
+                    4->{
+                        val vidro = Vidro(reciclavel,true)
+                        vidro.exibirLista(vidro.reciclaveis)
+                    }
 
                 }
                 }
@@ -68,16 +80,23 @@ fun main() {
                 var faustao = readln().toInt()
                 when(faustao){
                     1->
-                    {}
+                    {val precopapel = Papel(true,true)
+                        precopapel.calculadoraPapel()
+                    }
                     2->
-                    {}
+                    {val precoplastico = Plastico(true,true)
+                        precoplastico.calculadoraPlastico()
+                    }
                     3->
                     {
                      val precometal = Metal(true,true)
-                        precometal.calculadora2()
+                        precometal.calculadorametal()
                     }
                     4->
-                    {}
+                    {
+                        val precovidro = Vidro(true,true)
+                            precovidro.calculadoraVrido()
+                    }
                 }
 
             }

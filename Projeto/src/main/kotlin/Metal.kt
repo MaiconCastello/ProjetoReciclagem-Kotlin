@@ -7,7 +7,7 @@ class Metal(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, nosci
     override var nreciclavel: String = ("Clipes, Grampos, Esponja de aço, Latas de inseticidas," +
             " Latas de verniz, Latas de solventes químicos \n")
 
-    fun calculadora2() {
+    fun calculadorametal() {
         println(
             "Escolha o tipo de metal:" +
                     "\n1 - Cobre" +
