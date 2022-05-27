@@ -104,7 +104,7 @@ fun main() {
                 4 -> break
             }
         } catch (e: Exception){
-            println("A opção não pode ser vazia, selecione uma opção válida!\n")
+            println("Opção inválida, insira uma opção válida!\n")
         }
 
     }

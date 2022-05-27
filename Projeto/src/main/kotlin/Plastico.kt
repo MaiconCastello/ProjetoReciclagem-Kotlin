@@ -58,5 +58,8 @@ class Plastico(
                 println("\nO valor médio de venda é R$$total.\n\n")
             }
         }
+        print("Aperte enter para continuar...")
+        readln()
+        println()
     }
 }

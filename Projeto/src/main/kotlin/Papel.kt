@@ -46,5 +46,8 @@ class Papel(
             }
 
         }
+        print("Aperte enter para continuar...")
+        readln()
+        println()
     }
 }

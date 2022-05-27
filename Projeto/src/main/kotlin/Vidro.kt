@@ -46,6 +46,8 @@ class Vidro(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, nosci
                 println("\nO valor médio de venda é R$$total.")
             }
         }
-
+        print("Aperte enter para continuar...")
+        readln()
+        println()
     }
 }
