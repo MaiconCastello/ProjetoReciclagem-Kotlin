@@ -41,8 +41,46 @@ fun main() {
 
                 }
                 }
-            2 ->{}
-            3 ->{}
+            2 ->{
+                print("O que você deseja descartar:\n" +
+                        "1 → Pilhas\n" +
+                        "2 → Eletrônicos\n" +
+                        "3 → Óleo de cozinha")
+                menu = readln().toInt()
+                when(menu){
+                    1 ->{
+                        Descarte.pilhas()
+                    }
+                    2 ->{
+
+                    }
+                    3 ->{
+
+                    }
+                }
+            }
+            3 ->{
+                println("Insira o tipo:\n"+
+                                "1 → PAPEL\n" +
+                                "2 → PLÁSTICO\n" +
+                                "3 → METAL\n" +
+                                "4 → VIDRO\n")
+                var faustao = readln().toInt()
+                when(faustao){
+                    1->
+                    {}
+                    2->
+                    {}
+                    3->
+                    {
+                     val precometal = Metal(true,true)
+                        precometal.calculadora2()
+                    }
+                    4->
+                    {}
+                }
+
+            }
             4 -> break
         }
     }
