@@ -1,5 +1,22 @@
-class Vidro(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, noscivo){
+class vidro(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, noscivo){
 
-    override var reciclável: String = ("Copos plásticos, sacos/sacolas, frascos de produtos, embalagens Pet, canos de PVC, tubo de caneta (Sem a tinta), tampas, embalagens tipo Tupperware, embalagens de produto de limpeza, potes de alimentos, frascos, utilidades domésticas, peças de brinquedos, engradados de bebidas e baldes.")
-    override var nreciclável: String = ("papel, arrrgh, ué, kkkkk")
+    override var reciclável: String = ("Potes de conservas, Embalagens, Frascos de remédios vazios, Copos, Garrafas\n")
+    override var nreciclável: String = ("Espelhos, Boxes temperados, Louças, Óculos, Cerâmicas, Porcelanas, Pirex, " +
+                                         "Tubos de TV,  Monitores, Para-brisa de carros ")
+}
+
+fun calculadora() {
+
+    println("Escolha o tipo de vidro:"+
+            "\n1 - Ambar"+
+            "\n2 - Transparente"+
+            "\n 3 - Verde")
+    var opc = readln().toInt()
+
+    when(opc){
+        1-> precokg = x
+        2-> precokg = y
+        3-> precokg  = z}
+
+
 }
