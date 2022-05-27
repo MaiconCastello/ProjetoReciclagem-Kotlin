@@ -1,6 +1,6 @@
 abstract class Materiais (
-    var reciclavel: Boolean,
-    var nocivo: Boolean,
+    var reciclaveis: Boolean,
+    var noscivo: Boolean,
 
         ) {
     open var reciclável: String = ("")
