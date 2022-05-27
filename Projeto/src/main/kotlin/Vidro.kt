@@ -36,7 +36,7 @@ fun calculadora() {
 
             println("Você vai receber o total de R$$totalvidro3")
         }
+        4 -> break
     }
-
 
 }
