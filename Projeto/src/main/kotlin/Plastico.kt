@@ -8,35 +8,55 @@ class Plastico(
     override var nreciclavel: String = ("Cabos de panela, Tomadas, Isopor, Adesivos, Espuma, Teclados de computador, Embalagens de salgadinho e Bolacha (embalagens plásticas metalizadas), Acrílicos")
 
     fun calculadoraPlastico() {
-
-        println("Digite o peso de cada tipo de papel (em Kg):")
-        println("1 - Tetrapak")
-        var tetrapak = readln().toDouble()
-        println("2 - Filme")
-        var filme = readln().toDouble()
-        println("3 - PET")
-        var pet = readln().toDouble()
-        println("3 - PVC")
-        var pvc = readln().toDouble()
-
-        val precoPesoTetrapak = 0.07
-        val precoPesoFilme = 0.32
-        val precoPesoPet = 0.4
-        val precoPesoPVC = 0.4
+        println("-----TABELA DE PREÇOS-----")
+        println("-----Tetrapak: R$00.07-----")
+        println("-----Filme:    R$00.32-----")
+        println("-----PET:      R$00.40-----")
+        println("-----PVC:      R$00.40-----")
 
 
-        var finalTetrapak = precoPesoTetrapak * tetrapak
-        var finalFilme = precoPesoFilme * filme
-        var finalPet = precoPesoPet * pet
-        var finalPVC = precoPesoPVC * pvc
+        println(
+            "Escolha o tipo de metal:" +
+                    "\n1 - Tetrapak" +
+                    "\n2 - Filme" +
+                    "\n3 - PET" +
+                    "\n4 - PVC"
+        )
+        var opc = readln().toInt()
 
-        var valorFinal = finalTetrapak + finalFilme + finalPet + finalPVC
+        when (opc) {
+            1 -> {
+                var precokg = 0.07
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.")
 
+            }
+            2 -> {
+                var precokg = 0.32
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.")
+            }
+            3 -> {
+                var precokg = 0.4
 
-        println("O valor total de papelão é de: R$$finalTetrapak")
-        println("O valor total de papel branco é de: R$$finalFilme")
-        println("O valor total de papel misto é de: R$$finalPet")
-        println("O valor total de papel misto é de: R$$finalPVC")
-        println("O valor total final é de: R$$valorFinal")
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.\n\n")
+            }
+
+            4 -> {
+                var precokg = 0.4
+
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.\n\n")
+            }
+        }
     }
 }

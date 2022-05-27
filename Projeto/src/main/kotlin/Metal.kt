@@ -8,6 +8,12 @@ class Metal(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, nosci
             " Latas de verniz, Latas de solventes químicos \n")
 
     fun calculadorametal() {
+        println("-----TABELA DE PREÇOS-----")
+        println("-----Cobre:    R$20.00-----")
+        println("-----Alumínio: R$05.00-----")
+        println("-----Ferro:    R$01.00-----")
+
+
         println(
             "Escolha o tipo de metal:" +
                     "\n1 - Cobre" +
