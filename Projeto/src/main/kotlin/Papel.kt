@@ -8,33 +8,43 @@ class Papel(
     override var nreciclavel: String = ("Papel higiênico, Papéis plastificados, Papéis engordurados, Etiquetas adesivas, Papel carbono, Papel celofane, Guardanapos, Bitucas de cigarros, Fotografias, Fita crepe, Papel toalha, Metalizados, Plastificados\n")
 
 
-
-
-
     fun calculadoraPapel() {
+        println("-----TABELA DE PREÇOS-----")
+        println("-----Papelão: R$0.08-----")
+        println("-----Branco:  R$0.14-----")
+        println("-----Misto:   R$0.06-----")
 
-        println("Digite o peso de cada tipo de papel (em Kg):")
-        println("1 - Papelão")
-        var papelao = readln().toDouble()
-        println("2 - Branco")
-        var branco = readln().toDouble()
-        println("3 - Misto")
-        var misto = readln().toDouble()
-        val precoPesoPapelao = 0.08
-        val precoPesoBranco = 0.14
-        val precoPesoMisto = 0.06
+        println(
+            "Escolha o tipo de papel:" +
+                    "\n1 - Papelão" +
+                    "\n2 - Branco" +
+                    "\n3 - Misto"
+        )
+        var opc = readln().toInt()
 
+        when(opc){
+            1 ->{
+                val precokg = 0.08
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.")
+            }
+            2 ->{
+                val precokg = 0.14
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.")
+            }
+            3 ->{
+                val precokg = 0.06
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.")
+            }
 
-        var finalPapelao = precoPesoPapelao * papelao
-        var finalBranco = precoPesoBranco * branco
-        var finalMisto = precoPesoMisto * misto
-
-        var valorFinal = finalPapelao + finalBranco + finalMisto
-
-
-        println("O valor total de papelão é de: R$$finalPapelao")
-        println("O valor total de papel branco é de: R$$finalBranco")
-        println("O valor total de papel misto é de: R$$finalMisto")
-        println("O valor total final é de: R$$valorFinal")
+        }
     }
 }
