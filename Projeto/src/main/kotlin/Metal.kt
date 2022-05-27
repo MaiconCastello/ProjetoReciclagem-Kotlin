@@ -28,7 +28,8 @@ class Metal(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, nosci
                 println("Digite o valor em KG a ser vendido: ")
                 var kg = readln().toDouble()
                 var total = precokg * kg
-                println("\nO valor médio de venda é R$$total.")
+                println("\nO valor médio de venda de $kg KG é R$$total\n" +
+                        "O KG desse material é em média R$$precokg.")
 
             }
             2 -> {
@@ -36,7 +37,8 @@ class Metal(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, nosci
                 println("Digite o valor em KG a ser vendido: ")
                 var kg = readln().toDouble()
                 var total = precokg * kg
-                println("\nO valor médio de venda é R$$total.")
+                println("\nO valor médio de venda é R$$total."+
+                "O KG desse material é em média R$$precokg.")
             }
             3 -> {
                 var precokg = 1.00
@@ -44,7 +46,8 @@ class Metal(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, nosci
                 println("Digite o valor em KG a ser vendido: ")
                 var kg = readln().toDouble()
                 var total = precokg * kg
-                println("\nO valor médio de venda é R$$total.\n\n")
+                println("\nO valor médio de venda é R$$total.\n\n"+
+                "O KG desse material é em média R$$precokg ")
             }
         }
     }
