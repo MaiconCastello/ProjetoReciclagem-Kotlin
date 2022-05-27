@@ -1,6 +1,6 @@
 fun main() {
 
-    println("Bem vinde, selecione uma das opções abaixo:\n")
+    println("Bem vinde, selecione uma das opções abaixo:")
     while(true){
         try{
             println("MENU" +
@@ -58,18 +58,15 @@ fun main() {
                     print("O que você deseja descartar:\n" +
                             "1 → Pilhas\n" +
                             "2 → Eletrônicos\n" +
-                            "3 → Óleo de cozinha")
+                            "3 → Óleo de cozinha\n")
                     menu = readln().toInt()
                     when(menu){
-                        1 ->{
-                            Descarte.pilhas()
-                        }
-                        2 ->{
+                        1 -> Descarte.pilhas()
 
-                        }
-                        3 ->{
+                        2 -> Descarte.eletronicos()
 
-                        }
+                        3 -> Descarte.oleodecozinha()
+
                     }
                 }
                 3 ->{
@@ -99,14 +96,11 @@ fun main() {
                             precovidro.calculadoraVrido()
                         }
                     }
-
                 }
                 4 -> break
             }
-        } catch (e: Exception){
+        }catch (e: Exception){
             println("Opção inválida, insira uma opção válida!\n")
         }
-
     }
-
 }
