@@ -4,8 +4,8 @@ class Papel(
     ): Materiais(reciclaveis, noscivo) {
 
     override var reciclavel: String =
-        ("Jornais, Revistas, Livros, Folhas de caderno, Papelão, Envelopes, Cartazes, Caixa de pizza, Cartolinas, Papel cartão, Embalagens longa vida (Tetrapak, como leite ou sucos), Impressos em geral.")
-    override var nreciclavel: String = ("Papel higiênico, Papéis plastificados, Papéis engordurados, Etiquetas adesivas, Papel carbono, Papel celofane, Guardanapos, Bitucas de cigarros, Fotografias, Fita crepe, Papel toalha, Metalizados, Plastificados")
+        ("Jornais, Revistas, Livros, Folhas de caderno, Papelão, Envelopes, Cartazes, Caixa de pizza, Cartolinas, Papel cartão, Embalagens longa vida (Tetrapak, como leite ou sucos), Impressos em geral.\n")
+    override var nreciclavel: String = ("Papel higiênico, Papéis plastificados, Papéis engordurados, Etiquetas adesivas, Papel carbono, Papel celofane, Guardanapos, Bitucas de cigarros, Fotografias, Fita crepe, Papel toalha, Metalizados, Plastificados\n")
 
 
 

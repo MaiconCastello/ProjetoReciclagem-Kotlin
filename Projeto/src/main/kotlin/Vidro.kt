@@ -1,8 +1,8 @@
 class Vidro(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, noscivo) {
 
     override var reciclavel: String = ("Potes de conservas, Embalagens, Frascos de remédios vazios, Copos, Garrafas\n")
-    override var nreciclavel: String = ("Espelhos, Boxes temperados, Louças, Óculos, Cerâmicas, Porcelanas, Pirex, " +
-            "Tubos de TV,  Monitores, Para-brisa de carros")
+    override var nreciclavel: String = ("Espelhos, Boxes temperados, Louças, Óculos, Cerâmicas, Porcelanas, Pirex," +
+            "Tubos de TV,  Monitores, Para-brisa de carros\n")
 
 
     fun calculadoraVrido() {

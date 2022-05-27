@@ -1,6 +1,6 @@
 fun main() {
 
-    println("Bem vinde, selecione uma das opções abaixo:")
+    println("Bem vinde, selecione uma das opções abaixo:\n")
     while(true){
         try{
             println("MENU" +
