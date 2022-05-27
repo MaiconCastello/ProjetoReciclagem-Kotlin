@@ -53,7 +53,24 @@ fun main() {
 
                 }
                 }
-            2 ->{}
+            2 ->{
+                print("O que você deseja descartar:\n" +
+                        "1 → Pilhas\n" +
+                        "2 → Eletrônicos\n" +
+                        "3 → Óleo de cozinha")
+                menu = readln().toInt()
+                when(menu){
+                    1 ->{
+                        Descarte.pilhas()
+                    }
+                    2 ->{
+
+                    }
+                    3 ->{
+
+                    }
+                }
+            }
             3 ->{}
             4 -> break
         }
