@@ -59,7 +59,28 @@ fun main() {
                     }
                 }
             }
-            3 ->{}
+            3 ->{
+                println("Insira o tipo:\n"+
+                                "1 → PAPEL\n" +
+                                "2 → PLÁSTICO\n" +
+                                "3 → METAL\n" +
+                                "4 → VIDRO\n")
+                var faustao = readln().toInt()
+                when(faustao){
+                    1->
+                    {}
+                    2->
+                    {}
+                    3->
+                    {
+                     val precometal = Metal(true,true)
+                        precometal.calculadora2()
+                    }
+                    4->
+                    {}
+                }
+
+            }
             4 -> break
         }
     }

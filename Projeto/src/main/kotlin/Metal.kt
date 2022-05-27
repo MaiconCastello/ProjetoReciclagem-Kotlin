@@ -6,4 +6,40 @@ class Metal(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, nosci
             "alumínio limpo, Aerossóis\n")
     override var nreciclável: String = ("Clipes, Grampos, Esponja de aço, Latas de inseticidas," +
             " Latas de verniz, Latas de solventes químicos \n")
+
+    fun calculadora2() {
+        println(
+            "Escolha o tipo de metal:" +
+                    "\n1 - Cobre" +
+                    "\n2 - Alumínio" +
+                    "\n3 - Ferro"
+        )
+        var opc = readln().toInt()
+
+        when (opc) {
+            1 -> {
+                var precokg = 20.00
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.")
+
+            }
+            2 -> {
+                var precokg = 5.00
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.")
+            }
+            3 -> {
+                var precokg = 1.00
+
+                println("Digite o valor em KG a ser vendido: ")
+                var kg = readln().toDouble()
+                var total = precokg * kg
+                println("\nO valor médio de venda é R$$total.\n\n")
+            }
+        }
+    }
 }
