@@ -9,8 +9,38 @@ fun main() {
                 "\n4 → Sair")
         var menu = readln().toInt()
         when(menu){
-            1 ->{val teste = Metal(false,true)
-            teste.exibirLista(teste.reciclaveis)}
+            1 ->{
+                menu =0
+                var reciclavel: Boolean = true
+                while (menu<1 || menu>2){
+                    println("Escolha uma opção válida:")
+                    print("1 → RECICLÁVEL\n" +
+                            "2 → NÃO RECICLÁVEL\n")
+                    menu = readln().toInt()
+                }
+                when(menu){
+                    1 -> {
+                        reciclavel = true
+                    }
+
+                    2 -> {
+                        reciclavel = false
+                    }
+                }
+                println("Escolha uma opção:")
+                print("1 → PAPEL\n" +
+                        "2 → PLÁSTICO\n" +
+                        "3 → METAL\n" +
+                        "4 → VIDRO\n")
+                menu = readln().toInt()
+                when(menu){
+                    1 -> {
+                        val papel = Papel(reciclavel,true)
+                        papel.exibirLista(papel.reciclaveis)
+                    }
+
+                }
+                }
             2 ->{}
             3 ->{}
             4 -> break
