@@ -1,5 +1,40 @@
-class Papel(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, noscivo){
+class Papel(
+    reciclaveis: Boolean,
+    noscivo:Boolean
+    ): Materiais(reciclaveis, noscivo) {
 
-    override var reciclável: String = ("Copos plásticos, sacos/sacolas, frascos de produtos, embalagens Pet, canos de PVC, tubo de caneta (Sem a tinta), tampas, embalagens tipo Tupperware, embalagens de produto de limpeza, potes de alimentos, frascos, utilidades domésticas, peças de brinquedos, engradados de bebidas e baldes.")
-    override var nreciclável: String = ("papel, arrrgh, ué, kkkkk")
+    override var reciclável: String =
+        ("Jornais, Revistas, Livros, Folhas de caderno, Papelão, Envelopes, Cartazes, Caixa de pizza, Cartolinas, Papel cartão, Embalagens longa vida (Tetrapak, como leite ou sucos), Impressos em geral.")
+    override var nreciclável: String = ("Papel higiênico, Papéis plastificados, Papéis engordurados, Etiquetas adesivas, Papel carbono, Papel celofane, Guardanapos, Bitucas de cigarros, Fotografias, Fita crepe, Papel toalha, Metalizados, Plastificados")
+
+
+
+
+
+    fun calculadoraPapel() {
+
+        println("Digite o peso de cada tipo de papel (em Kg):")
+        println("1 - Papelão")
+        var papelao = readln().toDouble()
+        println("2 - Branco")
+        var branco = readln().toDouble()
+        println("3 - Misto")
+        var misto = readln().toDouble()
+        val precoPesoPapelao = 0.08
+        val precoPesoBranco = 0.14
+        val precoPesoMisto = 0.06
+
+
+        var finalPapelao = precoPesoPapelao * papelao
+        var finalBranco = precoPesoBranco * branco
+        var finalMisto = precoPesoMisto * misto
+
+        var valorFinal = finalPapelao + finalBranco + finalMisto
+
+
+        println("O valor total de papelão é de: R$$finalPapelao")
+        println("O valor total de papel branco é de: R$$finalBranco")
+        println("O valor total de papel misto é de: R$$finalMisto")
+        println("O valor total final é de: R$$valorFinal")
+    }
 }
