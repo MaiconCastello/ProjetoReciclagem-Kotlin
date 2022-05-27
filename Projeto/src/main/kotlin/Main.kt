@@ -36,7 +36,19 @@ fun main() {
                 when(menu){
                     1 -> {
                         val papel = Papel(reciclavel,true)
-                        papel.exibirLista(papel.reciclaveis)
+                        papel.exibirLista(papel.reciclavel)
+                    }
+                    2 -> {
+                        val plastico = Plastico(reciclavel,true)
+                        plastico.exibirLista(plastico.reciclavel)
+                    }
+                    3 -> {
+                        val metal = Metal(reciclavel,true)
+                        metal.exibirLista(metal.reciclavel)
+                    }
+                    4 -> {
+                        val vidro = Vidro(reciclavel,true)
+                        vidro.exibirLista(vidro.reciclavel)
                     }
 
                 }
