@@ -3,18 +3,23 @@ abstract class Materiais (
     var noscivo: Boolean,
 
         ) {
-    open val reciclável = listOf<String>("papel", "Vidro", "plástico", "metal")
-    open val nreciclável = listOf<String>("papel", "Vidro", "plástico", "metal")
+    open var reciclável: String = ("Bla-Bla, arroz, feijão")
+    open var nreciclável: String = ("papel, bluble, abublé")
+    open
 
     fun exibirLista(reciclaveis: Boolean) {
         if (reciclaveis) {
-            reciclável.forEach() {
+            var listr: List<String> = listOf(*reciclável.split(", ").toTypedArray())
+            listr.forEach(){
                 println(it)
             }
-        } else {
-            nreciclável.forEach() {
+
+        }else{
+            var listnr: List<String> = listOf(*nreciclável.split(", ").toTypedArray())
+            listnr.forEach() {
                 println(it)
             }
+
         }
     }
 }
