@@ -1,4 +1,4 @@
-class vidro(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, noscivo){
+class Vidro(reciclaveis: Boolean, noscivo:Boolean): Materiais(reciclaveis, noscivo){
 
     override var reciclável: String = ("Potes de conservas, Embalagens, Frascos de remédios vazios, Copos, Garrafas\n")
     override var nreciclável: String = ("Espelhos, Boxes temperados, Louças, Óculos, Cerâmicas, Porcelanas, Pirex, " +
